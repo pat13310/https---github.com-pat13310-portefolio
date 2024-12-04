@@ -1,0 +1,112 @@
+{
+  "themes": {
+    "purple": {
+      "name": "Purple Dream",
+      "colors": {
+        "primary": {
+          "gradient": {
+            "from": "purple-500",
+            "via": "purple-400",
+            "to": "pink-400"
+          },
+          "shadow": {
+            "color": "#ffffff70",
+            "size": "0.3rem"
+          }
+        },
+        "background": {
+          "navbar": "gray-950/80"
+        }
+      }
+    },
+    "blue": {
+      "name": "Ocean Blue",
+      "colors": {
+        "primary": {
+          "gradient": {
+            "from": "blue-500",
+            "via": "cyan-400",
+            "to": "teal-400"
+          },
+          "shadow": {
+            "color": "#ffffff70",
+            "size": "0.3rem"
+          }
+        },
+        "background": {
+          "navbar": "gray-950/80"
+        }
+      }
+    },
+    "green": {
+      "name": "Forest Green",
+      "colors": {
+        "primary": {
+          "gradient": {
+            "from": "green-500",
+            "via": "emerald-400",
+            "to": "lime-400"
+          },
+          "shadow": {
+            "color": "#ffffff70",
+            "size": "0.3rem"
+          }
+        },
+        "background": {
+          "navbar": "gray-950/80"
+        }
+      }
+    },
+    "orange": {
+      "name": "Sunset Orange",
+      "colors": {
+        "primary": {
+          "gradient": {
+            "from": "orange-500",
+            "via": "amber-400",
+            "to": "yellow-400"
+          },
+          "shadow": {
+            "color": "#ffffff70",
+            "size": "0.3rem"
+          }
+        },
+        "background": {
+          "navbar": "gray-950/80"
+        }
+      }
+    }
+  },
+  "activeTheme": "purple",
+  "colors": {
+    "primary": {
+      "gradient": {
+        "from": "purple-500",
+        "via": "purple-400",
+        "to": "pink-400"
+      },
+      "shadow": {
+        "color": "#ffffff70",
+        "size": "0.3rem"
+      }
+    },
+    "background": {
+      "navbar": "gray-950",
+      "main": "gray-900"
+    },
+    "text": {
+      "primary": "white",
+      "secondary": "gray-300",
+      "muted": "gray-400"
+    }
+  },
+  "logo": {
+    "version": "V1.0",
+    "fontSize": "sm",
+    "fontWeight": "medium"
+  },
+  "navigation": {
+    "height": "12",
+    "spacing": "8"
+  }
+}

@@ -1,0 +1,58 @@
+{
+  "projects": [
+    {
+      "id": 1,
+      "title": "OpenChatAI",
+      "description": "OpenChatAI est une application web moderne construite avec Next.js qui permet d'interagir avec différents modèles d'IA via l'API OpenAI. Cette application offre une interface utilisateur élégante et réactive pour avoir des conversations avec des modèles de langage comme GPT-3.5 Turbo.",
+      "image": "/projects/OpenChatAI.png",
+      "technologies": ["React", "Next.js 13", "TypeScript", "Radix UI", "Tailwind CSS"],
+      "link": "https://github.com/pat13310/OpenChatAI",
+      "github": "https://github.com/pat13310/OpenChatAI"
+    },
+    {
+      "id": 2,
+      "title": "HappyMage",
+      "description": "HappyMage est une API avancée pour la manipulation d'images. Elle permet d'appliquer des effets variés tels que l'amélioration de la netteté, la suppression de l'arrière-plan, la cartoonisation et bien plus. Cette documentation présente en détail chaque fonctionnalité de l'API, ses points d'accès (endpoints), les paramètres nécessaires, et les réponses attendues.",
+      "image": "/projects/HappyMage.png",
+      "technologies": ["Flask", "Python", "Tailwind CSS"],
+      "link": "https://github.com/pat13310/HappyMage",
+      "github": "https://github.com/pat13310/HappyMage"
+    },
+    {
+      "id": 3,
+      "title": "CodeDiagram",
+      "description": "CodeDiagram est un éditeur web moderne pour la création et l'édition de diagrammes Mermaid. Il combine un éditeur de code puissant avec un rendu en temps réel, offrant une expérience utilisateur fluide et intuitive.",
+      "image": "/projects/Codediagram.png",
+      "technologies": ["React", "TypeScript", "Tailwind CSS","Mermaid.js"],
+      "link": "https://github.com/pat13310/CodeDiagram",
+      "github": "https://github.com/pat13310/CodeDiagram"
+    },
+    {
+      "id": 4,
+      "title": "HydroPi",
+      "description": "Système de surveillance et de contrôle pour l'hydroponie utilisant un Raspberry Pi. Interface web pour le monitoring des capteurs et le contrôle des équipements.",
+      "image": "/projects/placeholder.svg",
+      "technologies": ["Python", "Flask", "SQLite", "GPIO", "Chart.js"],
+      "link": "https://github.com/pat13310/HydroPi",
+      "github": "https://github.com/pat13310/HydroPi"
+    },
+    {
+      "id": 5,
+      "title": "MaFormation",
+      "description": "Plateforme de formation en ligne avec gestion des cours, des étudiants et des formateurs. Interface administrative complète et système de suivi des progrès.",
+      "image": "/projects/placeholder.svg",
+      "technologies": ["PHP", "Symfony", "MySQL", "Doctrine", "Twig"],
+      "link": "https://github.com/pat13310/MaFormation",
+      "github": "https://github.com/pat13310/MaFormation"
+    },
+    {
+      "id": 6,
+      "title": "Portfolio",
+      "description": "Site portfolio personnalisable développé avec React et TypeScript, qui présente vos projets et vos compétences avec des animations fluides et un design responsive.",
+      "image": "/projects/PorteFolio.png",
+      "technologies": ["React", "TypeScript", "Framer Motion", "Tailwind CSS"],
+      "link": "https://github.com/pat13310/portefolio",
+      "github": "https://github.com/pat13310/portefolio"
+    }
+  ]
+}

@@ -1,0 +1,211 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    @apply bg-background text-white;
+    margin: 0;
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+      'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+      sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+
+  /* Scrollbar personnalisée */
+  ::-webkit-scrollbar {
+    @apply w-2;
+  }
+
+  ::-webkit-scrollbar-track {
+    @apply bg-background;
+  }
+
+  .theme-purple ::-webkit-scrollbar-thumb {
+    @apply bg-gradient-to-b from-purple-500 to-pink-400;
+  }
+
+  .theme-blue ::-webkit-scrollbar-thumb {
+    @apply bg-gradient-to-b from-blue-500 to-teal-400;
+  }
+
+  .theme-green ::-webkit-scrollbar-thumb {
+    @apply bg-gradient-to-b from-green-500 to-lime-400;
+  }
+
+  .theme-orange ::-webkit-scrollbar-thumb {
+    @apply bg-gradient-to-b from-orange-500 to-yellow-400;
+  }
+
+  .theme-purple ::-webkit-scrollbar-thumb:hover {
+    @apply bg-gradient-to-b from-purple-400 to-pink-300;
+  }
+
+  .theme-blue ::-webkit-scrollbar-thumb:hover {
+    @apply bg-gradient-to-b from-blue-400 to-teal-300;
+  }
+
+  .theme-green ::-webkit-scrollbar-thumb:hover {
+    @apply bg-gradient-to-b from-green-400 to-lime-300;
+  }
+
+  .theme-orange ::-webkit-scrollbar-thumb:hover {
+    @apply bg-gradient-to-b from-orange-400 to-yellow-300;
+  }
+
+  ::-webkit-scrollbar-thumb {
+    @apply rounded-full;
+    border: 2px solid transparent;
+    background-clip: padding-box;
+  }
+
+  /* Animations */
+  @keyframes float {
+    0%, 100% {
+      transform: translateY(0);
+    }
+    50% {
+      transform: translateY(-20px);
+    }
+  }
+
+  .animate-float {
+    animation: float 3s ease-in-out infinite;
+  }
+
+  /* Animation de texte */
+  .text-gradient {
+    @apply bg-clip-text text-transparent bg-gradient-to-r from-blue-400 to-purple-600;
+  }
+
+  :root {
+    font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+    line-height: 1.5;
+    font-weight: 400;
+
+    color-scheme: light dark;
+    color: rgba(255, 255, 255, 0.87);
+    background-color: #242424;
+
+    font-synthesis: none;
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+
+  a {
+    font-weight: 500;
+    color: #646cff;
+    text-decoration: inherit;
+  }
+  a:hover {
+    color: #535bf2;
+  }
+
+  h1 {
+    font-size: 3.2em;
+    line-height: 1.1;
+  }
+
+  button {
+    border-radius: 8px;
+    border: 1px solid transparent;
+    padding: 0.6em 1.2em;
+    font-size: 1em;
+    font-weight: 500;
+    font-family: inherit;
+    background-color: #1a1a1a;
+    cursor: pointer;
+    transition: border-color 0.25s;
+  }
+  button:hover {
+    border-color: #646cff;
+  }
+  button:focus,
+  button:focus-visible {
+    outline: 4px auto -webkit-focus-ring-color;
+  }
+
+  /* Styles spécifiques aux thèmes */
+  .theme-purple {
+    --gradient-from: theme('colors.purple.500');
+    --gradient-via: theme('colors.purple.400');
+    --gradient-to: theme('colors.pink.400');
+  }
+
+  .theme-blue {
+    --gradient-from: theme('colors.blue.500');
+    --gradient-via: theme('colors.cyan.400');
+    --gradient-to: theme('colors.teal.400');
+  }
+
+  .theme-green {
+    --gradient-from: theme('colors.green.500');
+    --gradient-via: theme('colors.emerald.400');
+    --gradient-to: theme('colors.lime.400');
+  }
+
+  .theme-orange {
+    --gradient-from: theme('colors.orange.500');
+    --gradient-via: theme('colors.amber.400');
+    --gradient-to: theme('colors.yellow.400');
+  }
+
+  /* Styles de la navbar */
+  @layer components {
+    .nav-link {
+      @apply relative text-white transition-colors duration-300;
+    }
+
+    .nav-link:hover {
+      background: linear-gradient(to right, var(--gradient-from), var(--gradient-via), var(--gradient-to));
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+
+    .nav-link::after {
+      content: '';
+      @apply absolute left-0 -bottom-2 h-0.5 w-0 transition-all duration-300;
+      background: linear-gradient(to right, var(--gradient-from), var(--gradient-via), var(--gradient-to));
+    }
+
+    .nav-link:hover::after {
+      @apply w-full;
+    }
+
+    .nav-link.active {
+      background: linear-gradient(to right, var(--gradient-from), var(--gradient-via), var(--gradient-to));
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+
+    .nav-link.active::after {
+      @apply w-full;
+    }
+  }
+
+  /* Styles des titres */
+  h1, h2, h3 {
+    @apply text-white;
+  }
+
+  @media (prefers-color-scheme: light) {
+    :root {
+      color: #213547;
+      background-color: #ffffff;
+    }
+    a:hover {
+      color: #747bff;
+    }
+    button {
+      background-color: #f9f9f9;
+    }
+  }
+}

@@ -1,0 +1,16 @@
+{
+  "firstName": "Patrick",
+  "lastName": "GARCIA",
+  "title": "Développeur Full Stack",
+  "email": "patrick.garcia@example.com",
+  "phone": "+33 6 12 34 56 78",
+  "location": "Marseille, France",
+  "avatar": "/profile/avatar.jpg",
+  "initials": "PG",
+  "bio": "Passionné par le développement web et les nouvelles technologies, je crée des applications innovantes et performantes.",
+  "social": {
+    "github": "https://github.com/pat13310",
+    "linkedin": "https://linkedin.com/in/patrick-garcia",
+    "twitter": "https://twitter.com/patgarcia"
+  }
+}
